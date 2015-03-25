@@ -1,16 +1,15 @@
 simditor-marked
 ==============
 
-[Simditor](http://simditor.tower.im/)扩展，将编辑器内markdown的内容格式化
+[Simditor](http://simditor.tower.im/)扩展，将编辑器全屏
 
 ### 如何使用
 
 #### 常规加载
-在Simditor的基础上额外引用[marked.js](https://github.com/chjj/marked/blob/master/lib/marked.js) 和 simditor-marked 的脚本
+在Simditor的基础上引用 simditor-fullscreen 的脚本
 
 ```html
-<script src="js/marked.js"></script>
-<script src="js/simditor-marked.js"></script>
+<script src="js/simditor-fullscreen.js"></script>
 ```
 
 配置
@@ -19,12 +18,9 @@ simditor-marked
 new Simditor({
     textarea: textareaElement,
     ...,
-    toolbar: [..., 'marked']
+    toolbar: [..., 'fullscreen']
 })
 ```
-
-点击marked 按钮（类似m的图标）后（或用快捷键Ctrl+m），将格式化编辑器里面markdown的内容。
-如果选中了一部分编辑器的内容，那么只会格式选中的内容，否则格式全部内容。
 
 #### AMD模式加载
 
@@ -42,8 +38,7 @@ new Simditor({
       'simple-module': 'bower_components/simple-module/lib/module',
       'simple-uploader': 'bower_components/simple-uploader/lib/uploader',
       'simple-hotkeys': 'bower_components/simple-hotkeys/lib/hotkeys',
-      'simditor-marked': 'lib/simditor-marked',
-      marked: 'bower_components/marked/lib/marked'
+      'simditor-fullscreen': 'lib/simditor-fullscreen',
     }
   });
 ```
@@ -60,7 +55,7 @@ new Simditor({
         textarea: $('#editor'),
         toolbar: [
           //...
-          'marked'
+          'fullscreen'
         ]
       });
     });
@@ -70,7 +65,7 @@ new Simditor({
 ### 使用bower安装
 
 ```shell
-bower install simditor-marked
+bower install simditor-fullscreen
 ```
 
 ### 查看 demo
@@ -86,20 +81,7 @@ grunt
 在浏览器打开index.html即可(requirejs 的demo为index-require.html)
 
 ### History
-v0.0.6
-1.支持mac快捷键 cmd + m
 
-v0.0.5
-1.支持 ```simditor``` 2.0.6以上版本．
+v0.0.1 
 
-v0.0.4
-
-1. 修复bug #1. 在firefox中无法正确转义代码块
-
-v0.0.3
-
-1. 支持AMD模式加载
-
-v0.0.2 
-
-1. 更新icon. 不用锤子用类似m的图标了。
+1. 仅支持2.0 以上版本

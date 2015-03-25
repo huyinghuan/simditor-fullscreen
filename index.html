@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="bower_components/simditor/styles/simditor.css" />
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/simple-module/lib/module.js"></script>
+  <script type="text/javascript" src="bower_components/simple-hotkeys/lib/hotkeys.js"></script>
+  <script type="text/javascript" src="bower_components/simple-uploader/lib/uploader.js"></script>
+  <script type="text/javascript" src="bower_components/simditor/lib/simditor.js"></script>
+  <script type="text/javascript" src="src/simditor-fullscreen.js"></script>
+</head>
+<body>
+<div style="width: 200px; height: 500px">
+  <textarea id="editor" placeholder="这里输入内容" autofocus></textarea>
+</div>
+</body>
+<script>
+  var editor = new Simditor({
+    textarea: $('#editor'),
+    toolbar: [
+      'fullscreen'
+      ''
+    ]
+  });
+</script>
+</html>

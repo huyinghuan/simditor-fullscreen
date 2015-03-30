@@ -6,9 +6,21 @@
   <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.css" />
   <link rel="stylesheet" type="text/css" href="bower_components/simditor/styles/simditor.css" />
   <script src="bower_components/requirejs/require.js"></script>
+  <style>
+    .position-test{
+      width: 800px;
+      height: 600px;
+      margin: 0 auto;
+      background-color: #0F769F;
+    }
+  </style>
 </head>
 <body>
-<textarea id="editor" placeholder="这里输入内容" autofocus></textarea>
+<div class="position-test">
+  <div style="width: 200px; height: 500px">
+    <textarea id="editor" placeholder="这里输入内容" autofocus></textarea>
+  </div>
+</div>
 </body>
 <script>
   require.config({
@@ -18,21 +30,20 @@
       'simple-module': 'bower_components/simple-module/lib/module',
       'simple-uploader': 'bower_components/simple-uploader/lib/uploader',
       'simple-hotkeys': 'bower_components/simple-hotkeys/lib/hotkeys',
-      'simditor-marked': 'lib/simditor-marked',
-      marked: 'bower_components/marked/lib/marked'
+      'simditor-fullscreen': 'src/simditor-fullscreen'
     }
   });
   require(
     [
       'jquery',
       'simditor',
-      'simditor-marked'
+      'simditor-fullscreen'
     ],function($, Simditor){
       var editor = new Simditor({
         textarea: $('#editor'),
         toolbar: [
           //...
-          'marked'
+          'fullscreen'
         ]
       });
     });

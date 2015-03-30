@@ -29,7 +29,7 @@ new Simditor({
 <script src="bower_components/requirejs/require.js"></script>
 ```
 
-在require.js的入口 配置 marked
+在require.js的入口 配置 simditor-fullscreen
 ```
  require.config({
     paths:{
@@ -79,6 +79,10 @@ bower install
 grunt
 ```
 在浏览器打开index.html即可(requirejs 的demo为index-require.html)
+
+### Test
+
+在ubuntu 14.04的 chrome和firefox 下测试通过.
 
 ### History
 

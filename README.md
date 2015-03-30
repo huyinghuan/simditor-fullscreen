@@ -49,7 +49,7 @@ new Simditor({
     [
       'jquery',
       'simditor',
-      'simditor-marked'
+      'simditor-fullscreen'
     ],function($, Simditor){
       var editor = new Simditor({
         textarea: $('#editor'),

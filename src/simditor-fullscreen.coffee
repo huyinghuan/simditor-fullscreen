@@ -9,9 +9,12 @@
       @isExpand = false
       super
 
+    _init: ->
+      super
+      @setIcon("expand")
+
     name: 'fullscreen'
     title: 'full-screen'
-    icon: 'arrows-out'
 
     #保存expand之前的状态
     saveStatus: ->
@@ -76,8 +79,6 @@
       @saveStatus()
       @isExpand = true
       @doFullScreen()
-
-
 
   Simditor.Toolbar.addButton(FullScreenButton)
 )

@@ -10,6 +10,7 @@
       super
 
     _init: ->
+      @shortcut = 'esc'
       super
       @setIcon("expand")
 

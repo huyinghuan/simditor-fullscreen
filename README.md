@@ -85,6 +85,9 @@ grunt
 在ubuntu 14.04的 chrome和firefox 下测试通过.
 
 ### History
+v0.0.3
+1.增加快捷键绑定 ```esc```
+
 v0.0.2
 1. 支持2.1.5版本．
 (由于官方不在提供统一的图标处理，因此需要额外添加对fontawesome的依赖．具体可以参考demo: index.html)

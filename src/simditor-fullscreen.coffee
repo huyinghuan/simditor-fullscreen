@@ -30,6 +30,7 @@
           right: el.css('right')
           top: el.css('top')
           bottom: el.css('bottom')
+          'z-index': el.css('z-index')
         wrapper: wrapper.css("height")
         toolbar:
           wrapper:
@@ -56,7 +57,7 @@
         .css('right', "9px")
         .css('top', "9px")
         .css('bottom', "9px")
-
+        .css('z-index', 9999)
       @editor.wrapper.css("height", "100%")
 
       @editor.toolbar.wrapper

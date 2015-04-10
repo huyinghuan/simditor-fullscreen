@@ -85,6 +85,9 @@ grunt
 在ubuntu 14.04的 chrome和firefox 下测试通过.
 
 ### History
+v0.0.4
+1. 修复一个全屏bug , 当有其他组件设置了z-index
+
 v0.0.3
 1.增加快捷键绑定 ```esc```
 

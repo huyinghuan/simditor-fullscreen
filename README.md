@@ -1,4 +1,4 @@
-simditor-marked
+simditor-fullscreen
 ==============
 
 [Simditor](http://simditor.tower.im/)扩展，将编辑器全屏
